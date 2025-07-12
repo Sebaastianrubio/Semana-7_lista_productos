@@ -1,8 +1,16 @@
 // Lista inicial de productos
 const productos = [
-    {nombre:"CAMISETAS",precio:20.99, descripcion:"Camisetas cómodas y de buena calidad."},
-    {nombre: "CHAQUETAS ",precio: 59.99, descripcion:"Chaquetas,buenas bonitas y baratas."},
-    {nombre: "PANTALONES",precio: 15.50, descripcion: "Pantalones para hombre y mujer."
+    { nombre: "CAMISETAS",precio: 20.99, descripcion: "Camisetas cómodas y de buena calidad."
+    },
+    {
+        nombre: "CHAQUETAS ",
+        precio: 59.99,
+        descripcion: "Chaquetas,buenas bonitas y baratas."
+    },
+    {
+        nombre: "PANTALONES",
+        precio: 15.50,
+        descripcion: "Pantalones para hombre y mujer."
     }
 ];
 
@@ -14,7 +22,6 @@ function renderizarProductos() {
     productos.forEach((producto) => {
         const li = document.createElement("li");
         li.innerHTML = `
-        item.textContent=${"productos.nombre"} -${"producto.precio"} -${"producto.descripcion"}
             <strong>${producto.nombre}</strong> - $${producto.precio.toFixed(2)}<br>
             <em>${producto.descripcion}</em>
         `;
